@@ -104,10 +104,11 @@ header ul li {
 
 .container {
   width: 960px;
-  margin: 0 auto;
+  margin: 50px auto;
   overflow: hidden;
   position: relative;
-  top: 200px;
+  top: 75px;
+  bottom: 100px;
   z-index: 0;
 }
 
@@ -116,6 +117,7 @@ header ul li {
   width: 608px;
   overflow: hidden;
   padding: 20px;
+  margin-bottom: 100px;
   border: 1px solid #dddddd;
   float: left;
 }
