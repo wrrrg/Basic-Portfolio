@@ -42,6 +42,9 @@ header {
   background: #ffffff;
   border-bottom: #cccccc 3px solid;
   width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 2
 }
 
 header a {
@@ -82,24 +85,46 @@ header ul li {
 
 /* Main Content CSS */
 
-.main-content {
-  background: #ffffff;
-  width: 66%;
-  margin: 30px;
-  padding: 20px;
-  border: 1px solid #dddddd;
+.container {
+  width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  top: 200px;
+  z-index: 0;
 }
 
-.main-content h1 {
+.main-content {
+  background: #ffffff;
+  width: 608px;
+
+  padding: 20px;
+  border: 1px solid #dddddd;
+  float: left;
+}
+
+.main-content-h1 {
+  font-size: 32px;
   color: #4aaaa5;
   border-bottom: #dddddd 2px solid;
   padding-bottom: 15px;
 }
 
+.connect-h2 {
+  color: #4aaaa5;
+  border-bottom: #dddddd 2px solid;
+  padding-bottom: 15px;
+}
+
+#bill-jpg {
+  width: 200px;
+}
+
 /* Main Content Aside */
 aside {
   background: #ffffff;
-  width: 20%;
+  width: 230px;
+  float: right;
   padding: 20px;
   border: 1px solid #dddddd;
 }
@@ -108,6 +133,35 @@ aside h3 {
   color: #4aaaa5;
 }
 
+
+/* Portfolio Main CSS */
+
+.portfolio-image-links {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Contact Page CSS */
+
+.content-contact input {
+  width: 100%;
+
+}
+
+.contact-message {
+  height: 200px;
+  width: 100%;
+}
+
+.submit-btn {
+  font-size: 16px;
+  color: #ffffff;
+  background: #4aaaa5;
+  border: none;
+  width: 120px;
+  height: 40px;
+  margin-top: 20px;
+}
 
 /* Footer CSS */
 
