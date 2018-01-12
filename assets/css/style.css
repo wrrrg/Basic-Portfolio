@@ -151,6 +151,11 @@ aside {
   padding-bottom: 15px;
 }
 
+.connect-link {
+  width: 64px;
+  display: inline;
+}
+
 
 /* Portfolio Main CSS */
 
