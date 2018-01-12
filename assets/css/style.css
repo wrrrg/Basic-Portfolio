@@ -37,6 +37,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Times New Roman', 'Georgia', Times, serif;
 }
 
+h1 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
 /* Header CSS */
 header {
   background: #ffffff;
@@ -54,17 +59,17 @@ header h1 {
   color: white;
   width: 200px;
   padding: 20px 30px;
-  margin: 0 90px;
+  margin: 0 12%;
   text-align: center;
   white-space: nowrap;
 }
 
 header ul {
   box-sizing: content-box;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 100px;
-  margin-right: 100px;
+  margin-right: 10%;
   margin-top: 25px;
   list-style: none;
 }
@@ -80,32 +85,48 @@ header ul li {
   padding: 20px;
 }
 
+
 /* Main Content CSS */
 
 .main-content {
   background: #ffffff;
-  width: 66%;
-  margin: 30px;
+  width: 650px;
   padding: 20px;
   border: 1px solid #dddddd;
+  overflow: hidden;
+  float: left;
 }
 
 .main-content h1 {
   color: #4aaaa5;
   border-bottom: #dddddd 2px solid;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
+  margin-bottom: 12px;
+  font-size: 1.8em;
+}
+
+
+.about-img {
+  width: 200px;
 }
 
 /* Main Content Aside */
-aside {
+.about-aside {
+  text-align: center;
   background: #ffffff;
-  width: 20%;
-  padding: 20px;
+  float: right;
+  width: 270px;
+  padding: 0px 20px 20px 20px;
   border: 1px solid #dddddd;
+
 }
 
-aside h3 {
+aside h2 {
   color: #4aaaa5;
+  border-bottom: 1px solid rgba(50, 50, 50, 0.5);
+  padding: 15px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 /* Footer CSS */
