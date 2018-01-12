@@ -25,6 +25,23 @@
     *zoom: 1;
 }
 
+/* Placeholder fades */
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(0,0,0,.3);
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(0,0,0,.3);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(0,0,0,.3);
+}
+
+/* actual CSS */
+
 body {
   font-family:  'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   color: #777777;
@@ -97,7 +114,7 @@ header ul li {
 .main-content {
   background: #ffffff;
   width: 608px;
-
+  overflow: hidden;
   padding: 20px;
   border: 1px solid #dddddd;
   float: left;
@@ -106,13 +123,7 @@ header ul li {
 .main-content-h1 {
   font-size: 32px;
   color: #4aaaa5;
-  border-bottom: #dddddd 2px solid;
-  padding-bottom: 15px;
-}
-
-.connect-h2 {
-  color: #4aaaa5;
-  border-bottom: #dddddd 2px solid;
+  border-bottom: #dddddd 3px solid;
   padding-bottom: 15px;
 }
 
@@ -129,28 +140,64 @@ aside {
   border: 1px solid #dddddd;
 }
 
-aside h3 {
+
+.connect-h2 {
   color: #4aaaa5;
+  border-bottom: #dddddd 1px solid;
+  padding-bottom: 15px;
 }
 
 
 /* Portfolio Main CSS */
 
-.portfolio-image-links {
-  width: 100%;
-  padding: 20px;
+.main-content-portfolio h1{
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-/* Contact Page CSS */
-
-.content-contact input {
+.portfolio-image-links {
   width: 100%;
+  margin: auto;
+  padding: 0;
+  display: grid;
+  grid-row-gap: 50px;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows: 100vh; */
+}
 
+.portfolio-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 279px;
+}
+
+/* .portfolio-img-and-text {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 100%;
+  background-color: #4aaaa5;
+  color: white;
+} */
+
+/* Contact Page CSS */
+/*
+.contact-content {
+  padding: 20px;
+} */
+
+.contact-text {
+  padding: 5px;
+  width: 598px;
+  border: 1px solid #bbbbbb;
+  /* margin-right: 16px; */
 }
 
 .contact-message {
   height: 200px;
-  width: 100%;
+  width: 605px;
+  border: 1px solid #bbbbbb;
 }
 
 .submit-btn {
