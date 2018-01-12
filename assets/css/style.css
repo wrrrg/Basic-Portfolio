@@ -131,6 +131,8 @@ header ul li {
 
 #bill-jpg {
   width: 200px;
+  float: left;
+  margin-right: 10px;
 }
 
 /* Main Content Aside */
@@ -172,6 +174,25 @@ aside {
   align-items: center;
   justify-content: center;
   width: 279px;
+  position: relative;
+}
+
+.portfolio-text {
+  background: none repeat scroll 0 0 #4aaaa5;
+  opacity: 0.8;
+  top:120px;
+  width: 200px;
+  padding: 0;
+  text-align: center;
+  left: 40px;
+  text-align: top;
+  color: white;
+  position: absolute;
+}
+
+.portfolio-text h3 {
+  padding: 3px;
+  margin: 3px;
 }
 
 /* .portfolio-img-and-text {
