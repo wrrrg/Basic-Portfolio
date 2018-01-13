@@ -108,10 +108,11 @@ header ul li {
 
 .container {
   width: 960px;
-  margin: 0 auto;
+  margin: 50px auto;
   overflow: hidden;
   position: relative;
-  top: 200px;
+  top: 75px;
+  bottom: 100px;
   z-index: 0;
 }
 
@@ -120,6 +121,7 @@ header ul li {
   width: 608px;
   overflow: hidden;
   padding: 20px;
+  margin-bottom: 100px;
   border: 1px solid #dddddd;
   float: left;
 }
@@ -133,6 +135,8 @@ header ul li {
 
 #bill-jpg {
   width: 200px;
+  float: left;
+  margin-right: 10px;
 }
 
 /* Main Content Aside */
@@ -149,6 +153,11 @@ aside {
   color: #4aaaa5;
   border-bottom: #dddddd 1px solid;
   padding-bottom: 15px;
+}
+
+.connect-link {
+  width: 64px;
+  display: inline;
 }
 
 
@@ -174,6 +183,25 @@ aside {
   align-items: center;
   justify-content: center;
   width: 279px;
+  position: relative;
+}
+
+.portfolio-text {
+  background: none repeat scroll 0 0 #4aaaa5;
+  opacity: 0.8;
+  top:120px;
+  width: 200px;
+  padding: 0;
+  text-align: center;
+  left: 40px;
+  text-align: top;
+  color: white;
+  position: absolute;
+}
+
+.portfolio-text h3 {
+  padding: 3px;
+  margin: 3px;
 }
 
 /* .portfolio-img-and-text {
